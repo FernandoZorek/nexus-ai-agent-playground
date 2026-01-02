@@ -1,0 +1,30 @@
+{
+  "scenarios": [
+    {
+      "userId": "founder_journey_2026",
+      "context": "A startup founder looking for a payment gateway and starting technical integration.",
+      "steps": [
+        {
+          "id": "fs_01",
+          "text": "I'm launching a new app and I need a gateway. What are your plan options and their prices?"
+        },
+        {
+          "id": "fs_02",
+          "text": "The Pro plan looks interesting. If I sign an annual contract right away, are there any benefits?"
+        },
+        {
+          "id": "fs_03",
+          "text": "Great, a 20% discount helps a lot. What are the uptime guarantees (SLA) for this specific plan?"
+        },
+        {
+          "id": "fs_04",
+          "text": "Deal. I want to start the integration now. What are the first technical steps I should follow?"
+        },
+        {
+          "id": "fs_05",
+          "text": "I tried making the first call but I received a '401 Unauthorized' error. What did I do wrong?"
+        }
+      ]
+    }
+  ]
+}

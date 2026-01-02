@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  nexus-agent:
+    build: .
+    container_name: nexus_agent_playground
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=development
+      - LLM_PROVIDER=${LLM_PROVIDER}
+      - GEMINI_MODEL=${GEMINI_MODEL}
+      - OPENAI_MODEL=${OPENAI_MODEL}
+    volumes:
+      - .:/app
+      - /app/node_modules
+    tty: true
+    stdin_open: true
+    restart: on-failure
+
+# Future expansion: You can add the RAG-microservice here
